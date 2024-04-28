@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Custom CSS */
+        body {
+            background-color: #97388f;
+        }
+
+        .navbar {
+            background-color: #669134;
+        }
+
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #b37575 !important;
+        }
+
+        .navbar-brand:hover, .navbar-nav .nav-link:hover {
+            color: #370783 !important;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #ffffff;
+        }
+
+        /* Content styles */
+        .container {
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+
+        /* Service card styles */
+        .service-card {
+            margin-bottom: 20px;
+        }
+
+        .service-card .card-body {
+            font-size: 1.1em;
+        }
+
+        /* Form styles */
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        /* Button styles */
+        .btn-primary {
+            background-color: #00ff40;
+            border-color: #007bff;
+            width: 100%;
+            font-size: 1.2em;
+            padding: 12px;
+            margin-top: 20px;
+        }
+
+        .btn-primary:hover {
+            background-color: #0069d9;
+            border-color: #0062cc;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Home Services</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="landing.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="work.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Booking</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="mb-3">Select a Time Slot:</h3>
+                <!-- Time slot selection form -->
+                <form>
+                    <div class="form-group">
+                        <select class="form-control" id="timeSlot">
+                            <option selected disabled>Select a time slot</option>
+                            <option>8:00 AM - 10:00 AM</option>
+                            <option>10:00 AM - 12:00 PM</option>
+                            <option>12:00 PM - 2:00 PM</option>
+                            <option>2:00 PM - 4:00 PM</option>
+                            <option>4:00 PM - 6:00 PM</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h3 class="mb-3">Describe Your Issue:</h3>
+                <!-- Comment section -->
+                <form>
+                    <div class="form-group">
+                        <textarea class="form-control" id="issue" rows="5" placeholder="Describe your issue"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" id="issueType">
+                            <option selected disabled>Select type of issue</option>
+                            <option>Plumbing</option>
+                            <option>Electrical</option>
+                            <option>Appliance Repair</option>
+                            <option>Painting</option>
+                            <option>Carpentry</option>
+                            <option>General Maintenance</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="text-center">
+            <!-- Payment button -->
+            <a href="payment.html" class="btn btn-primary">Proceed to Payment</a>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Font Awesome -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
+
+
+

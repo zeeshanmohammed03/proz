@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Custom CSS */
+        .navbar {
+            background-color: #5e2750;
+        }
+
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #ffffff !important;
+        }
+
+        .navbar-brand:hover, .navbar-nav .nav-link:hover {
+            color: #f5a10e !important;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #f5a10e;
+        }
+
+        /* Background image */
+        body {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRezQWWPXsRKAT5r60TsZ5cEtmFKw-1FVVexA&s");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: rgba(48, 46, 180, 0); /* 50% transparent black */
+        }
+
+        /* Content styles */
+        .container {
+            background-color: rgba(70, 92, 132, 0.8); /* Transparent blue */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Image styles */
+        .work-image {
+            width: 200px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 15px;
+            animation: moveRightToLeft 10s linear infinite; /* Animation for moving from right to left */
+        }
+
+        @keyframes moveRightToLeft {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* FAQ styles */
+        .card-header {
+            background-color: #422e52; /* Dark purple */
+        }
+
+        .card-header button {
+            color: #ffffff;
+        }
+
+        .card-body {
+            background-color: #5e2750; /* Dark purple */
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Home Services</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="landing.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="work.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signup.html">
+                        <i class="fas fa-user-circle"></i> <!-- User icon -->
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="help.html">
+                        <i class="fas fa-envelope"></i> <!-- Mail icon -->
+                    </a>
+                </li>
+                <!-- If user is not signed in, display Sign In button -->
+                <li class="nav-item">
+                    <a class="nav-link" href="signin.html">Sign In</a> <!-- Sign In button -->
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- Content -->
+    <div class="container mt-5">
+        <h1>Help Page</h1>
+        <p>If you need any assistance, please contact us at <a href="mailto:support@homeservices.com">support@homeservices.com</a></p>
+        <h3>Frequently Asked Questions (FAQs)</h3>
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            How do I book a service?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        To book a service, please visit our website and navigate to the Services page. From there, you can select the service you need and follow the prompts to schedule an appointment.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            What payment methods do you accept?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        We accept all major credit cards, as well as PayPal for online payments.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Can I cancel my booking?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        Yes, you can cancel your booking. Please contact our support team at least 24 hours before your scheduled appointment to cancel or reschedule.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Work images -->
+        <div class="row mt-5">
+            <div class="col-md-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQad9G-Cb6e71sFEEshJfeXcJHHkrKiTKDprw&s" alt="" class="work-image">
+                
+            </div>
+            <div class="col-md-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShKkvbRBQKxbvbSQDv42uDCbQt2jQpCq419w&s" alt="" class="work-image">
+              
+            </div>
+            <div class="col-md-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4mTykWZPJmG3zXxNZup16C2SBJZMhLgl79g&s" alt="" class="work-image">
+              
+            </div>
+            <div class="col-md-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrsD1LadZ3LrO7Ut33YniX2g9eleg9H4VrTQ&s" alt="" class="work-image">
+               
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Font Awesome -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

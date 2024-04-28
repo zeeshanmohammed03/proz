@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Custom CSS */
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #ffffff !important;
+        }
+
+        .navbar-brand:hover, .navbar-nav .nav-link:hover {
+            color: #cccccc !important;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #ffffff;
+        }
+         /* Image styles */
+         .work-image {
+            width: 200px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 15px;
+            animation: moveRightToLeft 10s linear infinite; /* Animation for moving from right to left */
+        }
+
+        @keyframes moveRightToLeft {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+
+   <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Home Services</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="landing.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="work.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signup.html">
+                        <i class="fas fa-user-circle"></i> <!-- User icon -->
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="help.html">
+                        <i class="fas fa-envelope"></i> <!-- Mail icon -->
+                    </a>
+                </li>
+                <!-- If user is not signed in, display Sign In button -->
+                <li class="nav-item">
+                    <a class="nav-link" href="signin.html">Sign In</a> <!-- Sign In button -->
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- Jumbotron (Hero) -->
+    <div class="jumbotron">
+        <div class="container text-center">
+            <h1>Welcome to Home Services</h1>
+            <p class="lead">Book a service now and get professional help for all your home needs!</p>
+            <a href="booking.html" class="btn btn-primary btn-lg">Book Now</a>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 text-center mb-5">
+                <i class="fas fa-wrench fa-4x mb-3"></i>
+                <h3 class="mb-3">Professional Services</h3>
+                <p class="lead">Get access to skilled professionals for all your home service needs.</p>
+            </div>
+            <div class="col-lg-4 text-center mb-5">
+                <i class="fas fa-clock fa-4x mb-3"></i>
+                <h3 class="mb-3">Convenient Booking</h3>
+                <p class="lead">Book your service appointment at your convenience, 24/7.</p>
+            </div>
+            <div class="col-lg-4 text-center mb-5">
+                <i class="fas fa-shield-alt fa-4x mb-3"></i>
+                <h3 class="mb-3">Trusted Service Providers</h3>
+                <p class="lead">Our service providers are thoroughly vetted for your safety and satisfaction.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Work images -->
+    <div class="row mt-5">
+        <div class="col-md-3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQad9G-Cb6e71sFEEshJfeXcJHHkrKiTKDprw&s" alt="" class="work-image">
+            
+        </div>
+        <div class="col-md-3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShKkvbRBQKxbvbSQDv42uDCbQt2jQpCq419w&s" alt="" class="work-image">
+          
+        </div>
+        <div class="col-md-3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4mTykWZPJmG3zXxNZup16C2SBJZMhLgl79g&s" alt="" class="work-image">
+          
+        </div>
+        <div class="col-md-3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrsD1LadZ3LrO7Ut33YniX2g9eleg9H4VrTQ&s" alt="" class="work-image">
+           
+        </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <div class="container text-center">
+            <p>&copy; 2024 Home Services. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Font Awesome -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
+
+
+

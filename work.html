@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Custom CSS */
+        body {
+            background-color: #60beb2;
+        }
+
+        .navbar {
+            background-color: #4e647a !important;
+        }
+
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #8a18b8 !important;
+        }
+
+        .navbar-brand:hover, .navbar-nav .nav-link:hover {
+            color: #cccccc !important;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #d7e937;
+        }
+
+        /* Content styles */
+        .container {
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+
+        /* Service card styles */
+        .service-card {
+            margin-bottom: 20px;
+        }
+
+        .service-card .card-body {
+            font-size: 1.1em;
+        }
+
+        /* Image styles */
+        .work-image {
+            width: 200px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 15px;
+            animation: moveRightToLeft 10s linear infinite; /* Animation for moving from right to left */
+        }
+
+        @keyframes moveRightToLeft {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Home Services</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="landing.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="work.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup.html">
+                            <i class="fas fa-user-circle"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="help.html">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signin.html">Sign In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Service Information -->
+    <div class="container">
+        <h1>Our Services</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Plumbing Services</h5>
+                        <p class="card-text">From fixing leaky faucets to installing new fixtures, our expert plumbers are here to handle all your plumbing needs with precision and care.</p>
+                        <a href="booking.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Electrical Services</h5>
+                        <p class="card-text">Let our skilled electricians take care of your electrical problems, from wiring issues to electrical installations, ensuring your safety and satisfaction.</p>
+                        <a href="booking.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- New row for Mechanical and Construction Services -->
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Construction Services</h5>
+                        <p class="card-text">Our construction team handles projects of all sizes, from renovations to new constructions. Let us bring your vision to life with our expertise and craftsmanship.</p>
+                        <a href="booking.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Mechanical Services</h5>
+                        <p class="card-text">Our mechanical experts specialize in servicing and repairing all types of mechanical systems, including HVAC, refrigeration, and more, to keep your home running smoothly.</p>
+                        <a href="booking.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Upcoming</h5>
+                        <p class="card-text">Many more services coming soon.
+                        </p>
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Work images -->
+    <div class="row mt-5">
+        <div class="col-md-3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQad9G-Cb6e71sFEEshJfeXcJHHkrKiTKDprw&s" alt="" class="work-image">
+            
+        </div>
+        <div class="col-md-3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShKkvbRBQKxbvbSQDv42uDCbQt2jQpCq419w&s" alt="" class="work-image">
+          
+        </div>
+        <div class="col-md-3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4mTykWZPJmG3zXxNZup16C2SBJZMhLgl79g&s" alt="" class="work-image">
+          
+        </div>
+        <div class="col-md-3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrsD1LadZ3LrO7Ut33YniX2g9eleg9H4VrTQ&s" alt="" class="work-image">
+           
+        </div>
+
+    <!-- Bootstrap JS and Font Awesome -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
+
+
+
+
+
